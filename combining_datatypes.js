@@ -90,3 +90,49 @@ powerButton()                                                       //calling po
 
 //options should console.log a simple message like select a song. Call that inner function
 console.log('==============================')
+
+
+
+////////////////////////////////
+//4. Model a Vending Machine Model a vending machine
+// a vending machine is an object
+const vendMachine = {                   //declaring object for Vending Machine
+    items: [                            //declaring an array inside of Vending Machine object
+        {                               //declaring array elements as also objects
+            name: 'candy bar',          //note to self: no need to name those elements, just write those as nameless objects
+            price: 2
+        },
+
+        {
+            name: 'water',
+            price: 1.5,
+        },
+
+        {
+            name: 'ice cream',
+            price: 4.5,
+        },
+    ],                                     //end of array
+
+
+// it has an array of snacks (make 3 snacks)
+// snacks are objects that have a name and a price
+// a vending machine has a function vend that allows user to enter the array position
+//(a number) of the snack and then that snack will be returned.
+    vend: (position) => {                   //switching the "position" of an item
+        switch (position) {                 //using switch-case to go thru those items
+            case 1: console.log(`You get ${vendMachine.items[0].name}`);
+                break;
+            case 2: console.log(`You get ${vendMachine.items[1].name}`);
+                break;
+            case 3: console.log(`You get ${vendMachine.items[2].name}`);
+                break;
+            default: console.log(`There is no such item here`);
+            return null;                    //have to have return to avoind undefined
+        }
+    }
+};                                      //end of Vending Machine object
+vendMachine.vend(2);                    
+
+// Be able to call vendingMachine.vend() with a valid integer to return a snack
+console.log('==============================')
