@@ -1,6 +1,9 @@
 //   R'N'R   November 20, 2023
 
 
+
+////////////////////////////////
+//1. Programming fundamentals
 /*Write a ~1 sentence summary for each one
 Which ones surprise you (if any)?
 Which one is currently giving you the most struggle?
