@@ -97,6 +97,9 @@ console.log('==============================')
 //4. Model a Vending Machine Model a vending machine
 // a vending machine is an object
 const vendMachine = {                   //declaring object for Vending Machine
+                                        //Note to self: including the functionality into this object as well, 
+                                        //so my stand-alone functions become a method within the object
+                                        //and the function's syntax changes a lot. 
     items: [                            //declaring an array inside of Vending Machine object
         {                               //declaring array elements as also objects
             name: 'candy bar',          //note to self: no need to name those elements, just write those as nameless objects
@@ -120,19 +123,61 @@ const vendMachine = {                   //declaring object for Vending Machine
 // a vending machine has a function vend that allows user to enter the array position
 //(a number) of the snack and then that snack will be returned.
     vend: (position) => {                   //switching the "position" of an item
+                                            //Note to self: this line confused the hell out of me... because it is within an object,
+                                            //the function syntax has to be this way. "vend: ()", not "let vend = () => {
+                                            //as for a stand-alone function
         switch (position) {                 //using switch-case to go thru those items
-            case 1: console.log(`You get ${vendMachine.items[0].name}`);
+            case 1: console.log(`You get ${vendMachine.items[0].name}`);    //accessing a particular item thru interpolation
                 break;
             case 2: console.log(`You get ${vendMachine.items[1].name}`);
                 break;
             case 3: console.log(`You get ${vendMachine.items[2].name}`);
                 break;
             default: console.log(`There is no such item here`);
-            return null;                    //have to have return to avoind undefined
+            return null;                    //have to have return to avoind undefined. being "trickly creative" used null.
         }
     }
 };                                      //end of Vending Machine object
-vendMachine.vend(2);                    
+vendMachine.vend(2);
 
 // Be able to call vendingMachine.vend() with a valid integer to return a snack
 console.log('==============================')
+
+
+
+////////////////////////////////
+// //5. Callbacks
+// Make a function add that takes two arguments (numbers) and sums them together
+const add = (numberOne, numberTwo) => {
+    let sum = numberOne + numberTwo
+    return console.log(sum);
+}
+add(2,3)
+// Make a function subtract that takes two arguments (numbers) and subtracts them
+const subtract = (numberOne, numberTwo) => {
+    let difference = numberOne - numberTwo
+    return console.log(difference);
+}
+subtract(2,3)
+// Make a function multiply that takes two arguments and multiplies them
+const multiply = (numberOne, numberTwo) => {
+    let multiplication = numberOne * numberTwo
+    return console.log(multiplication);
+}
+multiply(2,3)
+// Make a function divide that takes two arguments and divides them
+const divide = (numberOne, numberTwo) => {
+    let division = numberOne / numberTwo
+    return console.log(division);
+}
+divide(2,3)
+// Make a function calculate that takes three arguments. 
+//Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
+
+let calculate = (num1, num2, 
+    operates()) = {
+        return 
+}
+calculate(2,3,)
+// Make it so that when calculate is invoked, the callback "operates" on the numbers and returns the value.
+// Call calculate 4 times, each time using one of the operation functions you wrote
