@@ -179,7 +179,9 @@ divide(2,3)
 //Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
 
 let calculate = (num1, num2, operates) => {
-        return operates(num1, num2);                //using in combination with the rest of the code
+        if (num2 === 0) console.log(`Can not divide by zero.`);
+        else return operates(num1, num2);                //using in combination with the rest of the code
+        //add division by zero restriction
 };
 //calculate(2,3,)                                   //used initially
 
@@ -190,6 +192,6 @@ console.log('==============================')
 console.log(calculate(5, 3, add));
 console.log(calculate(8, 2, subtract));
 console.log(calculate(4, 7, multiply));
-console.log(calculate(10, 2, divide));
+console.log(calculate(10, 5, divide));
 
 console.log('==============================')
