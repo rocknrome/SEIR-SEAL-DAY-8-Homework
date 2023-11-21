@@ -150,34 +150,46 @@ console.log('==============================')
 // Make a function add that takes two arguments (numbers) and sums them together
 const add = (numberOne, numberTwo) => {
     let sum = numberOne + numberTwo
-    return console.log(sum);
+    //return console.log(sum);                  //used initially
+    return sum;                                 //using in combination with "operates" function
 }
 add(2,3)
 // Make a function subtract that takes two arguments (numbers) and subtracts them
 const subtract = (numberOne, numberTwo) => {
     let difference = numberOne - numberTwo
-    return console.log(difference);
+    //return console.log(difference);
+    return difference;
 }
 subtract(2,3)
 // Make a function multiply that takes two arguments and multiplies them
 const multiply = (numberOne, numberTwo) => {
     let multiplication = numberOne * numberTwo
-    return console.log(multiplication);
+    //return console.log(multiplication);
+    return multiplication;
 }
 multiply(2,3)
 // Make a function divide that takes two arguments and divides them
 const divide = (numberOne, numberTwo) => {
     let division = numberOne / numberTwo
-    return console.log(division);
+    //return console.log(division);
+    return division;
 }
 divide(2,3)
 // Make a function calculate that takes three arguments. 
 //Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
 
-let calculate = (num1, num2, 
-    operates()) = {
-        return 
-}
-calculate(2,3,)
+let calculate = (num1, num2, operates) => {
+        return operates(num1, num2);                //using in combination with the rest of the code
+};
+//calculate(2,3,)                                   //used initially
+
+console.log('==============================')
+
 // Make it so that when calculate is invoked, the callback "operates" on the numbers and returns the value.
 // Call calculate 4 times, each time using one of the operation functions you wrote
+console.log(calculate(5, 3, add));
+console.log(calculate(8, 2, subtract));
+console.log(calculate(4, 7, multiply));
+console.log(calculate(10, 2, divide));
+
+console.log('==============================')
