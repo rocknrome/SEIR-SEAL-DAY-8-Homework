@@ -251,8 +251,8 @@ const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy'
 // You don't have to write an answer to the thought questions.
 
 // Every
-// Determine if every number is greater than or equal to 0
-//  Need to use EVERY method.
+    // Determine if every number is greater than or equal to 0
+    //  Need to use EVERY method.
 const everyOneIsGreaterThanZero = nums.every(i => i >=0);       //making sure every element of the array i meets the condition i>=0
 console.log(everyOneIsGreaterThanZero);
 console.log('==============================')
@@ -262,20 +262,32 @@ console.log(everyWordIsShorter);
 console.log('==============================')
 
 // Filter
-// filter the array for numbers less than 4
-// filter words that have an even length
+    // filter the array for numbers less than 4
+    const numberLessThanFour = nums.filter(element => element < 4)
+    console.log(numberLessThanFour);
+
+    // filter words that have an even length
+    const evenLength = panagram.filter(words => words.length % 2 === 0)
+    console.log(evenLength);
+    console.log('==============================')
 
 // Find
-// Find the first value divisible by 5
-// find the first word that is longer than 5 characters
+    // Find the first value divisible by 5
+    const divisibleByFive = nums.find(byfive => byfive % 5 === 0)
+    console.log(divisibleByFive);
+
+    // find the first word that is longer than 5 characters
+    const longerThanFive = panagram.filter(word => word.length > 5)
+    console.log(longerThanFive);
+    console.log('==============================')
 
 // Find Index
-// find the index of the first number that is divisible by 3
-// find the index of the first word that is less than 2 characters long
+    // find the index of the first number that is divisible by 3
+    // find the index of the first word that is less than 2 characters long
 
 // For Each
-// console.log each value of the nums array multiplied by 3
-// console.log each word with an exclamation point at the end of it
+    // console.log each value of the nums array multiplied by 3
+    // console.log each word with an exclamation point at the end of it
 
 // Thought Questions
 
