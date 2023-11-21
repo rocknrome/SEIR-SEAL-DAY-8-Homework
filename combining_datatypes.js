@@ -295,7 +295,13 @@ console.log('==============================')
 
 // For Each
     // console.log each value of the nums array multiplied by 3
+    nums.forEach(n => {
+        console.log(n * 3);
+    })
     // console.log each word with an exclamation point at the end of it
+    panagram.forEach(w => {
+        console.log(w + '!');
+    })
 
 // Thought Questions
 
