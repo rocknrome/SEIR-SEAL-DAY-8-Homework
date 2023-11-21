@@ -283,7 +283,15 @@ console.log('==============================')
 
 // Find Index
     // find the index of the first number that is divisible by 3
+    const findIndex = nums.findIndex(ind => ind % 3 === 0);
+    console.log(findIndex);
     // find the index of the first word that is less than 2 characters long
+    const findWordIndex = panagram.findIndex(wrd => wrd.length < 1)
+    if (findWordIndex === -1) {
+        console.log(`no such word`)         //added a prompt if such a word does not exist
+    }
+    console.log(findWordIndex);
+    console.log('==============================')
 
 // For Each
     // console.log each value of the nums array multiplied by 3
