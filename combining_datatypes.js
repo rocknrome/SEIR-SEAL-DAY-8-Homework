@@ -195,3 +195,39 @@ console.log(calculate(4, 7, multiply));
 console.log(calculate(10, 5, divide));
 
 console.log('==============================')
+
+
+
+////////////////////////////////
+//6. Function definition placement
+//Clean up this code, so that it works and has function definitions in the correct place
+
+//bar();                            //initial placement was here
+const bar = () => {
+    console.log('bar here');
+}
+bar()                               //correct placement (after the function declaration to call it)
+//foo();                            //initial placement was here
+const foo = () => {
+    console.log('foo here');
+}
+foo()                               //correct placement (after the function declaration to call it)
+
+
+
+////////////////////////////////
+//7. Error reading
+//Error reading
+//What is meant by the error(s) this produces?
+
+// foo();                      //needs to be after the function declaration
+
+// const foo ()=>{             //missing = sign after the variable name
+//     console.log('hi');
+// }
+
+//The correct syntax is:
+const foo1 = () => {        //had to change the name of the variable, cuz it is already declared in the previous task
+    console.log('hi');
+}
+foo1()                      //had to change the name of the variable, cuz it is already declared in the previous task
