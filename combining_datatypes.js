@@ -302,19 +302,3 @@ console.log('==============================')
     panagram.forEach(w => {
         console.log(w + '!');
     })
-
-// Thought Questions
-
-// What happened to the original array?
-// Can you store the values from a forEach method in a new array?
-// Map
-// make a new array of each number multiplied by 100
-// make a new array of all the words in all uppercase
-// Thought Questions
-
-// What happened to the original array?
-// Can you store the values from a map method in a new array?
-
-// Some
-// Find out if some numbers are divisible by 7
-// Find out if some words have the letter a in them
